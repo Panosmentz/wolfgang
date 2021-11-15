@@ -1,0 +1,17 @@
+.banner-container {
+  min-width: 100vw;
+  min-height: 400px !important;
+  background-image: url("../assets//images/header_banner.jpg");
+}
+
+.awards-text {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  font-size: 4.1875em;
+  line-height: 1em;
+  margin: 0;
+  font: 600 2.375em, lato, helvetica neue, Helvetica, Arial, sans-serif;
+}

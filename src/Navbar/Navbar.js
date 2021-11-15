@@ -5,26 +5,38 @@ import logoSvg from "../assets/images/wolfgang_logo.svg";
 
 function Navigationbar() {
   return (
-    <div>
-      <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img alt="" src={logoSvg} className="d-inline-block align-top" />{" "}
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#">OUR WORK</Nav.Link>
-              <Nav.Link href="#">ABOUT US</Nav.Link>
-              <Nav.Link href="#">CAREERS</Nav.Link>
-              <Nav.Link href="#">BLOG</Nav.Link>
-              <Nav.Link href="#">AWARDS</Nav.Link>
-              <Nav.Link href="#">CONTACT</Nav.Link>
+    <Navbar collapseOnSelect expand="lg">
+      <Container>
+        <Navbar.Brand href="https://www.wolfgangdigital.com/">
+          <img alt="" src={logoSvg} className="d-inline-block align-top" />{" "}
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Container className="nav-items">
+            <Nav>
+              <Nav.Link href="https://www.wolfgangdigital.com/our-work/">
+                OUR WORK
+              </Nav.Link>
+              <Nav.Link href="https://www.wolfgangdigital.com/about-us/">
+                ABOUT US
+              </Nav.Link>
+              <Nav.Link href="https://www.wolfgangdigital.com/about-us/careers-with-wolfgang-digital/">
+                CAREERS
+              </Nav.Link>
+              <Nav.Link href="https://www.wolfgangdigital.com/blog/">
+                BLOG
+              </Nav.Link>
+              <Nav.Link href="https://www.wolfgangdigital.com/awards/">
+                AWARDS
+              </Nav.Link>
+              <Nav.Link href="https://www.wolfgangdigital.com/contact/">
+                CONTACT
+              </Nav.Link>
             </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+          </Container>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

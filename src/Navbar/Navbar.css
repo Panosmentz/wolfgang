@@ -1,0 +1,20 @@
+.navbar {
+  background: none;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font: 700 1.3125 em lato, helvetica neue, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 3.1904761905em;
+
+  text-decoration: none;
+}

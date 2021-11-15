@@ -1,11 +1,17 @@
-import "./App.css";
-import Navbar from "./Navbar/Navbar";
+import Banner from "./Banner/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
+import TextImage from "./TextImage/TextImage";
+import Awards from "./Awards/Awards";
+import Footer from "./Footer/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Banner />
+      <TextImage />
+      <Awards />
+      <Footer />
     </div>
   );
 }
