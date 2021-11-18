@@ -1,7 +1,6 @@
 import React from "react";
 import "./Banner.css";
 import Navbar from "../Navbar/Navbar";
-import { Container, Row } from "react-bootstrap";
 
 function Banner() {
   return (

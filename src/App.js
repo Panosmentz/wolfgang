@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TextImage from "./TextImage/TextImage";
 import Awards from "./Awards/Awards";
 import Footer from "./Footer/Footer";
-import "./App.css";
 
 function App() {
   return (
