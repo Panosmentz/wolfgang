@@ -18,40 +18,22 @@ function Navigationbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Container className="nav-items">
             <Nav>
-              <Nav.Link
-                className="nav-links"
-                href="https://www.wolfgangdigital.com/our-work/"
-              >
+              <Nav.Link href="https://www.wolfgangdigital.com/our-work/">
                 OUR WORK
               </Nav.Link>
-              <Nav.Link
-                className="nav-links"
-                href="https://www.wolfgangdigital.com/about-us/"
-              >
+              <Nav.Link href="https://www.wolfgangdigital.com/about-us/">
                 ABOUT US
               </Nav.Link>
-              <Nav.Link
-                className="nav-links"
-                href="https://www.wolfgangdigital.com/about-us/careers-with-wolfgang-digital/"
-              >
+              <Nav.Link href="https://www.wolfgangdigital.com/about-us/careers-with-wolfgang-digital/">
                 CAREERS
               </Nav.Link>
-              <Nav.Link
-                className="nav-links"
-                href="https://www.wolfgangdigital.com/blog/"
-              >
+              <Nav.Link href="https://www.wolfgangdigital.com/blog/">
                 BLOG
               </Nav.Link>
-              <Nav.Link
-                className="nav-links"
-                href="https://www.wolfgangdigital.com/awards/"
-              >
+              <Nav.Link href="https://www.wolfgangdigital.com/awards/">
                 AWARDS
               </Nav.Link>
-              <Nav.Link
-                className="nav-links"
-                href="https://www.wolfgangdigital.com/contact/"
-              >
+              <Nav.Link href="https://www.wolfgangdigital.com/contact/">
                 CONTACT
               </Nav.Link>
             </Nav>

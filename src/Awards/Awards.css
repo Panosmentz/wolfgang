@@ -1,6 +1,11 @@
-.awards-container {
+.awards-background {
+  width: 100%;
   background: #f8f8f8;
+}
+
+.awards-container {
   margin-top: 70px;
+  width: 100%;
 }
 
 .filter-controls {
@@ -45,7 +50,7 @@
   background: #f8f8f8;
 }
 
-.acordion-item {
+.accordion-item {
   background: #f8f8f8;
 }
 .accordion-button {
