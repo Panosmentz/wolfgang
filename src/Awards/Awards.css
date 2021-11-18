@@ -1,5 +1,124 @@
 .awards-container {
   background: #f8f8f8;
-  min-height: 800px;
-  width: 100vw;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: fit-content;
+  padding-top: 4px;
+  margin-bottom: 24px;
+}
+
+.filter-controls label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #6e6e6e !important;
+}
+
+.filter-controls button {
+  height: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #38897e;
+  font-size: 0.75rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 200ms ease-out;
+}
+
+.filter-controls button:hover {
+  background-color: #36cea8;
+}
+
+.award-category {
+  border-bottom: 1px solid #634061;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+}
+
+.acordion-item {
+  background: #f8f8f8;
+}
+.accordion-button {
+  background: #f8f8f8;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6e6e6e !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #f8f8f8;
+  background-color: #f8f8f8;
+}
+.accordion-button:focus {
+  border-color: #f8f8f8;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+
+.filterbox {
+  display: flex;
+  flex-direction: column;
+  color: #6e6e6e !important;
+}
+
+.filterbox label {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+  white-space: nowrap;
+  line-height: 1;
+}
+.filterbox label:hover {
+  cursor: pointer;
+}
+
+.filterbox input {
+  position: initial;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+  text-indent: 1.5em;
+  min-width: calc(1em + 2px);
+}
+
+.viewing-container {
+  font-weight: bolder;
+  line-height: 1.5em;
+  margin-bottom: 24px;
+  color: #6e6e6e !important;
+}
+
+.award-item-right {
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  border-top: 4px solid #634061;
+  background: #f8f8f8;
+}
+
+.award-header-right {
+  color: #6e6e6e !important;
+  font-size: 1.875em;
+  line-height: 1.2857142857em;
+}
+
+.italics {
+  color: #6e6e6e !important;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-style: italic;
+  line-height: 1;
 }

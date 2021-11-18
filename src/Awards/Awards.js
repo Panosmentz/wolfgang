@@ -36,83 +36,100 @@ function Awards() {
   return (
     <Container className="awards-container">
       <Row>
-        <Col sm={4} className="">
-          <label>FILTER</label>
-          <button>CLEAR FILTERS</button>
+        <Col sm={4}>
+          <div className="filter-controls">
+            <label>FILTER</label>
+            <button>CLEAR FILTERS</button>
+          </div>
+
           <Accordion>
-            <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="0" className="award-category">
               <Accordion.Header>By Awards Ceremony</Accordion.Header>
               <Accordion.Body>
-                <Container>
-                  <Row>
-                    {ceremonies.map((data) => (
-                      <Row xs={3} className="mb-5">
+                <div className="filterbox">
+                  {ceremonies.map((data) => (
+                    <>
+                      <label for={ceremonies.data}>
+                        <input type="checkbox" id={ceremonies.data} />
                         {data}
-                      </Row>
-                    ))}
-                  </Row>
-                </Container>
+                      </label>
+                    </>
+                  ))}
+                </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="1" className="award-category">
               <Accordion.Header>By Year</Accordion.Header>
               <Accordion.Body>
-                <Container>
-                  <Row>
-                    {years.map((data) => (
-                      <Row xs={3} className="mb-5">
+                <div className="filterbox">
+                  {years.map((data) => (
+                    <>
+                      <label for={years.data}>
+                        <input type="checkbox" id={years.data} />
                         {data}
-                      </Row>
-                    ))}
-                  </Row>
-                </Container>
+                      </label>
+                    </>
+                  ))}
+                </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="2" className="award-category">
               <Accordion.Header>By Channel</Accordion.Header>
               <Accordion.Body>
-                <Container>
-                  <Row>
-                    {uniqueChannels.map((data) => (
-                      <Row xs={3} className="mb-5">
+                <div className="filterbox">
+                  {uniqueChannels.map((data) => (
+                    <>
+                      <label for={uniqueChannels.data}>
+                        <input type="checkbox" id={uniqueChannels.data} />
                         {data}
-                      </Row>
-                    ))}
-                  </Row>
-                </Container>
+                      </label>
+                    </>
+                  ))}
+                </div>
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="3">
+            <Accordion.Item eventKey="3" className="award-category">
               <Accordion.Header>By Industry</Accordion.Header>
               <Accordion.Body>
-                <Container>
-                  <Row>
-                    {industries.map((data) => (
-                      <Row xs={3} className="mb-5">
+                <div className="filterbox">
+                  {industries.map((data) => (
+                    <>
+                      <label for={industries.data}>
+                        <input type="checkbox" id={industries.data} />
                         {data}
-                      </Row>
-                    ))}
-                  </Row>
-                </Container>
+                      </label>
+                    </>
+                  ))}
+                </div>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
         </Col>
         <Col sm={8} className="">
-          <label>Viewing of....awards</label>
+          <p className="viewing-container">
+            Viewing <span id="award-count">7 </span>
+            of 15 awards
+          </p>
+
           <Accordion defaultActiveKey="0">
-            <Accordion.Item eventKey="0">
+            <Accordion.Item eventKey="0" className="award-item-right">
               <Accordion.Header>
-                2021 Click on the award to read more about the winning entry
+                <div className="award-header-right">
+                  2021
+                  <span className="italics">
+                    Click on the award to read more about the winning entry
+                  </span>
+                </div>
               </Accordion.Header>
               <Accordion.Body>
                 <Container>
                   <Row>
                     {awards2021.map((data) => (
                       <>
-                        {data.ceremony}
-                        Winner - {data.award}
-                        <Col>
+                        <Col md={12}> {data.ceremony}</Col>
+                        <Col md={8}>Winner - {data.award}</Col>
+
+                        <Col md={4}>
                           <img
                             src={`/assets/images/${data.logo}`}
                             alt="award-logo"
@@ -126,9 +143,14 @@ function Awards() {
             </Accordion.Item>
           </Accordion>
           <Accordion defaultActiveKey="1">
-            <Accordion.Item eventKey="1">
+            <Accordion.Item eventKey="1" className="award-item-right">
               <Accordion.Header>
-                2020 Click on the award to read more about the winning entry
+                <div className="award-header-right">
+                  2020
+                  <span className="italics">
+                    Click on the award to read more about the winning entry
+                  </span>
+                </div>
               </Accordion.Header>
               <Accordion.Body>
                 <Container>
@@ -151,9 +173,14 @@ function Awards() {
             </Accordion.Item>
           </Accordion>
           <Accordion>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item eventKey="2" className="award-item-right">
               <Accordion.Header>
-                2019 Click on the award to read more about the winning entry
+                <div className="award-header-right">
+                  2019
+                  <span className="italics">
+                    Click on the award to read more about the winning entry
+                  </span>
+                </div>
               </Accordion.Header>
               <Accordion.Body>
                 <Container>
@@ -176,9 +203,14 @@ function Awards() {
             </Accordion.Item>
           </Accordion>
           <Accordion>
-            <Accordion.Item eventKey="3">
+            <Accordion.Item eventKey="3" className="award-item-right">
               <Accordion.Header>
-                2018 Click on the award to read more about the winning entry
+                <div className="award-header-right">
+                  2018
+                  <span className="italics">
+                    Click on the award to read more about the winning entry
+                  </span>
+                </div>
               </Accordion.Header>
               <Accordion.Body>
                 <Container>
