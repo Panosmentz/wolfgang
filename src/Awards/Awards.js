@@ -126,8 +126,14 @@ function Awards() {
                   <Row>
                     {awards2021.map((data) => (
                       <>
-                        <Col md={12}> {data.ceremony}</Col>
-                        <Col md={8}>Winner - {data.award}</Col>
+                        <Col md={12}>
+                          <h3 className="award-title">{data.ceremony}</h3>
+                        </Col>
+                        <Col md={8}>
+                          <h4 className="award-winner">
+                            <span className="win">Winner</span> - {data.award}
+                          </h4>
+                        </Col>
 
                         <Col md={4}>
                           <img
@@ -157,9 +163,16 @@ function Awards() {
                   <Row>
                     {awards2020.map((data) => (
                       <>
-                        {data.ceremony}
-                        Winner - {data.award}
-                        <Col>
+                        <Col md={12}>
+                          <h3 className="award-title">{data.ceremony}</h3>
+                        </Col>
+                        <Col md={8}>
+                          <h4 className="award-winner">
+                            <span className="win">Winner</span> - {data.award}
+                          </h4>
+                        </Col>
+
+                        <Col md={4}>
                           <img
                             src={`/assets/images/${data.logo}`}
                             alt="award-logo"
@@ -187,9 +200,16 @@ function Awards() {
                   <Row>
                     {awards2019.map((data) => (
                       <>
-                        {data.ceremony}
-                        Winner - {data.award}
-                        <Col>
+                        <Col md={12}>
+                          <h3 className="award-title">{data.ceremony}</h3>
+                        </Col>
+                        <Col md={8}>
+                          <h4 className="award-winner">
+                            <span className="win">Winner</span> - {data.award}
+                          </h4>
+                        </Col>
+
+                        <Col md={4}>
                           <img
                             src={`/assets/images/${data.logo}`}
                             alt="award-logo"
@@ -217,9 +237,16 @@ function Awards() {
                   <Row>
                     {awards2018.map((data) => (
                       <>
-                        {data.ceremony}
-                        Winner - {data.award}
-                        <Col>
+                        <Col md={12}>
+                          <h3 className="award-title">{data.ceremony}</h3>
+                        </Col>
+                        <Col md={8}>
+                          <h4 className="award-winner">
+                            <span className="win">Winner</span> - {data.award}
+                          </h4>
+                        </Col>
+
+                        <Col md={4}>
                           <img
                             src={`/assets/images/${data.logo}`}
                             alt="award-logo"

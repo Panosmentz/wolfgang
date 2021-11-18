@@ -8,28 +8,50 @@ function Navigationbar() {
     <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="https://www.wolfgangdigital.com/">
-          <img alt="" src={logoSvg} className="d-inline-block align-top" />{" "}
+          <img
+            alt="wolfgang-logo"
+            src={logoSvg}
+            className="d-inline-block align-top"
+          />{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Container className="nav-items">
             <Nav>
-              <Nav.Link href="https://www.wolfgangdigital.com/our-work/">
+              <Nav.Link
+                className="nav-links"
+                href="https://www.wolfgangdigital.com/our-work/"
+              >
                 OUR WORK
               </Nav.Link>
-              <Nav.Link href="https://www.wolfgangdigital.com/about-us/">
+              <Nav.Link
+                className="nav-links"
+                href="https://www.wolfgangdigital.com/about-us/"
+              >
                 ABOUT US
               </Nav.Link>
-              <Nav.Link href="https://www.wolfgangdigital.com/about-us/careers-with-wolfgang-digital/">
+              <Nav.Link
+                className="nav-links"
+                href="https://www.wolfgangdigital.com/about-us/careers-with-wolfgang-digital/"
+              >
                 CAREERS
               </Nav.Link>
-              <Nav.Link href="https://www.wolfgangdigital.com/blog/">
+              <Nav.Link
+                className="nav-links"
+                href="https://www.wolfgangdigital.com/blog/"
+              >
                 BLOG
               </Nav.Link>
-              <Nav.Link href="https://www.wolfgangdigital.com/awards/">
+              <Nav.Link
+                className="nav-links"
+                href="https://www.wolfgangdigital.com/awards/"
+              >
                 AWARDS
               </Nav.Link>
-              <Nav.Link href="https://www.wolfgangdigital.com/contact/">
+              <Nav.Link
+                className="nav-links"
+                href="https://www.wolfgangdigital.com/contact/"
+              >
                 CONTACT
               </Nav.Link>
             </Nav>

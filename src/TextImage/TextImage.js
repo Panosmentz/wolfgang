@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import CelebrateImage from "../assets/images/content_image.jpg";
+import "./TextImage.css";
 
 function TextImage() {
   return (

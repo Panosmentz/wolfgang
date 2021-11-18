@@ -5,20 +5,10 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer-container">
-      <Container fluid>
-        <Row>
-          <Col>
-            <h2 className="footer-text">
-              Talk to us about your next award winning campaign
-            </h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Button className="btn">Get in Touch</Button>
-          </Col>
-        </Row>
-      </Container>
+      <h2 className="footer-text">
+        Talk to us about your next award winning campaign
+      </h2>
+      <button className="touch-btn">Get in Touch</button>
     </div>
   );
 }

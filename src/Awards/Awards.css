@@ -1,5 +1,6 @@
 .awards-container {
   background: #f8f8f8;
+  margin-top: 70px;
 }
 
 .filter-controls {
@@ -121,4 +122,30 @@
   margin-left: 1rem;
   font-style: italic;
   line-height: 1;
+}
+
+.award-title {
+  padding-top: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6e6e6e !important;
+}
+
+.award-winner {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  color: #6e6e6e !important;
+  line-height: 1.3571428571em;
+  margin-top: 15px;
+}
+
+.award-winner:hover {
+  text-decoration: underline;
+}
+
+.win {
+  color: #3f9b90;
+  font-weight: bold;
 }
